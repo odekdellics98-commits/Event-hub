@@ -620,6 +620,83 @@ nav h2 span {
 }
 
 
+/* CONTACT SECTION */
+#contact {
+    padding: 100px 8%;
+    background: #0d0d0d;
+    text-align: center;
+    border-top: 1px solid #1f1f1f;
+}
+
+#contact h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#contact h2 span {
+    color: #c9a24d;
+}
+
+#contact p {
+    color: #aaaaaa;
+    font-size: 15px;
+    letter-spacing: 1px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+#contact a {
+    display: inline-block;
+    text-decoration: none;
+    color: #080808;
+    background: #c9a24d;
+    padding: 15px 35px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+    margin-top: 30px;
+}
+
+#contact a:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* FOOTER SECTION */
+footer {
+    background: #050505;
+    padding: 50px 8% 40px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+}
+
+footer h3 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+footer h3 span {
+    color: #c9a24d;
+}
+
+footer p {
+    color: #777777;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    margin: 6px 0;
+}
+
+footer p:last-child {
+    margin-top: 22px;
+    font-size: 0.75rem;
+    color: #555555;
+}
+
 /* ===== MOBILE NAVIGATION ===== */
 @media (max-width: 768px) {
     .menu-toggle {
