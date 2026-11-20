@@ -36,3 +36,42 @@ registrationForm.addEventListener("submit", function(event) {
     registrationForm.reset();
 
 });
+/ HAMBURGER MENU FUNCTIONALITY
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", function() {
+
+    navLinks.classList.toggle("active");
+
+    const isOpen = navLinks.classList.contains("active");
+
+    menuToggle.textContent = isOpen ? "×" : "☰";
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+
+});
+
+// CLOSE MENU WHEN A LINK IS CLICKED
+
+navLinks.querySelectorAll("a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("active");
+
+        menuToggle.textContent = "☰";
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+    });
+
+});
